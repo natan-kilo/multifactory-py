@@ -31,3 +31,13 @@ pause
 9. Press `Ctrl+S` to Save the File
 10. Close the Editor, rightclick the File -> `Send To` -> `Desktop (Create Shortcut)`
 11. To run the Program in the Future, simply doubleclick the Shortcut on your Desktop
+
+
+### How it Works:
+- When `server.py` is started on the Server, it will generate a Password.
+- Every User that wants to connect to the Server needs to obtain this Password.
+- Whenever a User starts the Program, it will attempt to connect to the Server with the provided Server Address and Password
+- If the User succeeded to connect to the Server, the User will either receive a Message that the World is already being Hosted and by whom, or download the latest World Save from the Server, and be notified that they are now hosting the World.
+- When the User Hosting the Server is done playing or wants to stop hosting, they simply have to type 'exit' to upload their latest World Save to the Server, which the next Host will download when he start the Program
+- All saves are saved on the Server as `save_[save_number]_[save_host].sav` for backup purposes 
+
